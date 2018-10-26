@@ -1,3 +1,3 @@
 # Course of c#
 
-Evgenij_Novozhilov
+Kristina_Melnik
