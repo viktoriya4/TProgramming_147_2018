@@ -2,13 +2,13 @@
 
 namespace ConsoleApp3
 {
-    class Program
+    public class Program
 
     {
 
         public static double y(double x, double a, double b)
         {
-            return ((Math.Log10(x * x - 1) / Math.Log((a * x * x - b), 5)));
+            return Math.Log10(x * x - 1) / Math.Log((a * x * x - b), 5);
         }
 
 
