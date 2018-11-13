@@ -34,8 +34,15 @@ namespace ConsoleApp3
             {
                 Console.WriteLine($"Для x = {i}\t y = {y(i, a, b)}");
             }
+            static void Main(string[] args)
+            {
+                Airplane airplane = Airplane("samoletik", 700);
+                airplane.GetInfo();
+                Console.ReadKey();
+            }
             Console.ReadKey();
         }
+
 
     }
 }
