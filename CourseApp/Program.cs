@@ -1,5 +1,5 @@
 ﻿using System;
-
+using Samolet;
 namespace ConsoleApp3
 {
     public class Program
@@ -24,7 +24,7 @@ namespace ConsoleApp3
 
             for (double x = 1.2; x <= 2.2; x = x + 0.2)
             {
-                Console.WriteLine($"На шаге {x} функция y = {Math.Round(y(x,a,b), 4)}");
+                Console.WriteLine($"На шаге {x} функция y = {Math.Round(y(x, a, b), 4)}");
             }
 
             Console.WriteLine("Задача B:");
@@ -34,12 +34,16 @@ namespace ConsoleApp3
             {
                 Console.WriteLine($"Для x = {i}\t y = {y(i, a, b)}");
             }
-            static void Main(string[] args)
-            {
-                Airplane airplane = Airplane("samoletik", 700);
-                airplane.GetInfo();
-                Console.ReadKey();
-            }
+
+            Airplane airplane1 = new Airplane(700, "samoletik");
+            Console.WriteLine(airplane1.GetInfo());
+
+            Airplane airplane2 = new Airplane(700);
+            airplane2.GetInfo2();
+
+          
+            Console.ReadKey();
+        
             Console.ReadKey();
         }
 
