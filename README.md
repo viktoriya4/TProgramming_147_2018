@@ -1,3 +1,3 @@
 # Course of c#
 
-Konstantinov Eugeny Sergeevich
+Please write your name and surname here
