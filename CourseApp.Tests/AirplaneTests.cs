@@ -12,19 +12,21 @@ namespace CourseApp.Tests
             Assert.Equal(700, airplane1.Speed);
             Assert.Equal("samoletik", airplane1.Name);
         }
+
         [Fact]
         public void Test2()
         {
             Airplane airplane1 = new Airplane(700);
             Assert.Equal(700, airplane1.Speed);
-          
         }
+
         [Fact]
         public void Test3()
         {
             Airplane airplane2 = new Airplane(700);
             Assert.Equal(700, airplane2.Speed);
         }
+
         [Fact]
         public void Test4()
         {
@@ -33,6 +35,7 @@ namespace CourseApp.Tests
             airplane2.Speed = 500;
             Assert.Equal(500, airplane2.Speed);
         }
+
         public void TestNameSet()
         {
             Airplane airplane2 = new Airplane(700);
