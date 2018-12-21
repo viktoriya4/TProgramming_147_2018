@@ -1,9 +1,10 @@
 ﻿using System;
 using Xunit;
 using Samolet;
+
 namespace CourseApp.Tests
 {
-    public class AirplaneTests1
+    public class AirplaneTests
     {
         [Fact]
         public void Test1()
@@ -36,6 +37,7 @@ namespace CourseApp.Tests
             Assert.Equal(500, airplane2.Speed);
         }
 
+        [Fact]
         public void TestNameSet()
         {
             Airplane airplane2 = new Airplane(700);
@@ -51,7 +53,6 @@ namespace CourseApp.Tests
             airplane2.Speed = -500;
             Assert.Equal(700, airplane2.Speed);
         }
-
 
         [Fact]
         public void TestGetInfo()
