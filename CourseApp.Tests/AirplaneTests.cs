@@ -61,5 +61,12 @@ namespace CourseApp.Tests
             var exp = "Имя: Noname  Скорость: 700";
             Assert.Equal(exp, airplane2.GetInfo());
         }
+
+        [Fact]
+        public void TestNegativeSpeedInConstructor()
+        {
+            Airplane airplane2 = new Airplane(-700);
+            Assert.Equal(0, airplane2.Speed);
+        }
     }
 }

@@ -9,14 +9,13 @@ namespace Samolet
 
         public Airplane(int speed, string name)
         {
-            this.name = name;
-            this.speed = speed;
+            this.Name = name;
+            this.Speed = speed;
         }
 
         public Airplane(int speed)
+            : this(speed, "Noname")
         {
-            this.name = "Noname";
-            this.speed = speed;
         }
 
         public string Name
@@ -40,11 +39,6 @@ namespace Samolet
         public string GetInfo()
         {
             return $"Имя: {name}  Скорость: {speed}";
-        }
-
-        public void GetInfo2()
-        {
-            Console.WriteLine($"Скорость: {speed}");
         }
     }
 }

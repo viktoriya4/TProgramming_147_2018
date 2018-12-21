@@ -35,7 +35,6 @@ namespace ConsoleApp3
             Console.WriteLine(airplane1.GetInfo());
 
             Airplane airplane2 = new Airplane(700);
-            airplane2.GetInfo2();
 
             Console.ReadKey();
             Console.ReadKey();
