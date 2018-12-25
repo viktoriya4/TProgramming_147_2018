@@ -1,12 +1,9 @@
 using System;
 
-namespace Samolet
+namespace CourseApp
 {
-    public class Airplane
+    public class Airplane : Vehicle
     {
-        private string name;
-        private int speed;
-
         public Airplane(int speed, string name)
         {
             this.Name = name;
@@ -18,27 +15,9 @@ namespace Samolet
         {
         }
 
-        public string Name
-        {
-            get => name;
-            set => name = value;
-        }
-
-        public int Speed
-        {
-            get => speed;
-            set
-            {
-                if (value > 0)
-                {
-                    speed = value;
-                }
-            }
-        }
-
         public string GetInfo()
         {
-            return $"Имя: {name}  Скорость: {speed}";
+            return $"Имя: {this.Name}  Скорость: {this.Speed}";
         }
     }
 }

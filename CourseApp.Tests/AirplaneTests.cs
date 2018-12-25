@@ -1,6 +1,6 @@
 ﻿using System;
 using Xunit;
-using Samolet;
+using CourseApp;
 
 namespace CourseApp.Tests
 {
